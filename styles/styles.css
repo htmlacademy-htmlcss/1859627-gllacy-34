@@ -1,0 +1,215 @@
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-400.woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-700.woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/inter-900.woff2");
+    font-display: swap;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    background: #feafc3;
+    color: #2d3440;
+    margin: 0;
+  }
+
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    min-height: 104px;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation-list {
+    list-style: none;
+    display: flex;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .navigation-item {
+    padding: 8px 16px;
+  }
+
+  .navigation-user .navigation-item:nth-last-child(1) {
+    padding-right: 0;
+  }
+
+  .navigation-user {
+    list-style: none;
+    display: flex;
+    line-height: 20px;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .search-button {
+    padding: 9px;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background: rgba(252, 252, 252, 0.3);
+    border: none;
+    border-radius: 27px;
+    background-position: center;
+  }
+
+  .login-button {
+    padding: 0;
+    min-width: 88px;
+    min-height: 32px;
+    background-repeat: no-repeat;
+    background: rgba(252, 252, 252, 0.3);
+    border: none;
+    border-radius: 27px;
+    background-position: center;
+    position: relative;
+  }
+
+  .login-icon {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+
+  .login-text {
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    color: #2d3440;
+    top: 6px;
+    left: 38px;
+  }
+
+  .basket-button {
+    padding: 0;
+    min-width: 115px;
+    min-height: 32px;
+    background-repeat: no-repeat;
+    background: rgba(252, 252, 252, 0.3);
+    border: none;
+    border-radius: 27px;
+    background-position: center;
+    position: relative;
+  }
+
+  .basket-icon {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+
+  .basket-text {
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    color: #2d3440;
+    top: 6px;
+    left: 38px;
+  }
+
+  .logo {
+    padding: 24px 16px 24px 0;
+  }
+
+  .tel {
+    font-weight: 700;
+    text-decoration: none;
+    color: #2d3440;
+  }
+
+  .gift-header {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+    text-align: center;
+    margin: 80px auto 55px;
+  }
+
+  .gift {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .raspberry,
+  .marshmallow {
+    padding: 36px;
+    width: 498px;
+    min-height: 196px;
+    border-radius: 16px;
+    background-color: #ff7799;
+    position: relative;
+  }
+
+  .raspberry-header,
+  .marshmallow-header {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .raspberry-text ,
+  .marshmallow-text {
+    margin: 28px 0;
+  }
+
+  .raspberry-image,
+  .marshmallow-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .wanna-gift-button {
+    min-width: 176px;
+    min-height: 44px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    border: none;
+    outline: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    background: #fcfcfc;
+  }
