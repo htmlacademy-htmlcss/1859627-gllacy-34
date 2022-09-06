@@ -59,6 +59,32 @@
     padding: 8px 16px;
   }
 
+  .navigation-link {
+    text-decoration: none;
+    color: #2d3440;
+    padding: 6px 14px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
+  }
+
+  .navigation-link:hover {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    padding: 6px 14px;
+  }
+
+  .navigation-link:active {
+    background: #fcfcfc;
+    border-radius: 30px;
+  }
+
+  .navigation-link:focus-visible {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    border: 2px solid #2d3440;
+    outline: none;
+  }
+
   .navigation-user .navigation-item:nth-last-child(1) {
     padding-right: 0;
   }
@@ -83,6 +109,21 @@
     overflow: hidden;
   }
 
+  .search-button:hover {
+    background: rgba(252, 252, 252, 0.5);
+  }
+
+  .search-button:focus-visible {
+    background: rgba(252, 252, 252, 0.5);
+    border: 2px solid #2D3440;
+    padding: 7px;
+    outline: none;
+  }
+
+  .search-button:active {
+    background: #fcfcfc;
+  }
+
   .search-button {
     padding: 9px;
     width: 32px;
@@ -92,11 +133,29 @@
     border: none;
     border-radius: 27px;
     background-position: center;
+    cursor: pointer;
+  }
+
+  .login-button:hover {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    padding: 6px 14px;
+  }
+
+  .login-button:active {
+    background: #fcfcfc;
+    border-radius: 30px;
+  }
+
+  .login-button:focus-visible {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    outline: 2px solid #2d3440;
   }
 
   .login-button {
     padding: 0;
-    min-width: 88px;
+    min-width: 84px;
     min-height: 32px;
     background-repeat: no-repeat;
     background: rgba(252, 252, 252, 0.3);
@@ -104,6 +163,7 @@
     border-radius: 27px;
     background-position: center;
     position: relative;
+    cursor: pointer;
   }
 
   .login-icon {
@@ -121,6 +181,23 @@
     left: 38px;
   }
 
+  .basket-button:hover {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    padding: 6px 14px;
+  }
+
+  .basket-button:active {
+    background: #fcfcfc;
+    border-radius: 30px;
+  }
+
+  .basket-button:focus-visible {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    outline: 2px solid #2d3440;
+  }
+
   .basket-button {
     padding: 0;
     min-width: 115px;
@@ -131,6 +208,7 @@
     border-radius: 27px;
     background-position: center;
     position: relative;
+    cursor: pointer;
   }
 
   .basket-icon {
@@ -192,13 +270,42 @@
   .raspberry-text ,
   .marshmallow-text {
     margin: 28px 0;
+    max-width: 328px;
   }
 
   .raspberry-image,
   .marshmallow-image {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
+  }
+
+  .wanna-gift-button:hover {
+    background: rgba(252, 252, 252, 0.4);
+    outline: 4px solid #fcfcfc;
+    box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+    border-radius: 26px;
+  }
+
+  .wanna-gift-button:active {
+    background: #fcfcfc;
+    outline: 2px solid #2d3440;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+  }
+
+  .wanna-gift-button:focus-visible {
+    background: rgba(252, 252, 252, 0.5);
+    outline: 2px solid #2d3440;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+  }
+
+  .wanna-gift-button:disabled {
+    background: #e7e7e7;
+    outline: 4px solid rgba(252, 252, 252, 0.4);
+    border-radius: 26px;
+    color: #b9b9b9;
   }
 
   .wanna-gift-button {
@@ -212,4 +319,6 @@
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     background: #fcfcfc;
+    color: #2d3440;
+    cursor: pointer;
   }
