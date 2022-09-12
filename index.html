@@ -3,10 +3,70 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <div class="container">
+      <header class="page-header">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-logo">
+              <img class="logo" src="images/logo.svg" width="137" height="56" alt="Логотип магазина.">
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О компании</a>
+            </li>
+          </ul>
+          <ul class="navigation-user">
+            <li class="navigation-item">
+              <a class="tel" href="tel:+78005558628">+7 800 555-86-28</a>
+            </li>
+            <li class="navigation-item">
+              <button class="search-button" type="button">
+                <img src="images/icons/search.svg" width="14" height="14">
+                <span class="visually-hidden">Поиск.</span>
+              </button>
+            </li>
+            <li class="navigation-item">
+              <button class="login-button" type="button">
+                <img class="login-icon" src="images/icons/login.svg" width="16" height="16">
+                <span class="login-text">Вход</span>
+              </button>
+            </li>
+            <li class="navigation-item">
+              <button class="basket-button" type="button">
+                <img class="basket-icon" src="images/icons/basket.svg" width="16" height="16">
+                <span class="basket-text">2 товара</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <h3 class="gift-header">Заказывайте мороженое<br> и получайте подарки!</h3>
+          <div class="gift">
+            <div class="raspberry">
+              <h4 class="raspberry-header">Малинка даром!</h4>
+              <p class="raspberry-text">При покупке 2 кг любого фруктового<br> мороженого добавим в ваш заказ банку<br> малинового варенья бесплатно.</p>
+              <img class="raspberry-image" src="images/raspberry.png" width="219" height="268">
+              <button class="wanna-gift-button">Хочу подарок</button>
+            </div>
+            <div class="marshmallow">
+              <h4 class="marshmallow-header">Маршмеллоу даром!</h4>
+              <p class="marshmallow-text">При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку нежных<br> зефирок совершенно бесплатно.</p>
+              <img class="marshmallow-image" src="images/marshmallow.png" width="219" height="268">
+              <button class="wanna-gift-button">Хочу подарок</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

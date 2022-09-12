@@ -1,0 +1,345 @@
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-400.woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-700.woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/inter-900.woff2");
+    font-display: swap;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    background: #feafc3;
+    color: #2d3440;
+    margin: 0;
+  }
+
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    min-height: 104px;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    min-height: 104px;
+  }
+
+  .navigation-list {
+    list-style: none;
+    display: flex;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    min-height: 104px;
+    flex-wrap: wrap;
+  }
+
+  .navigation-item {
+    padding: 8px 16px;
+  }
+
+  .navigation-link {
+    text-decoration: none;
+    color: #2d3440;
+    padding: 6px 14px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
+  }
+
+  .navigation-link:hover {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    padding: 6px 14px;
+  }
+
+  .navigation-link:active {
+    background: #fcfcfc;
+    border-radius: 30px;
+  }
+
+  .navigation-link:focus-visible {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    border: 2px solid #2d3440;
+    outline: none;
+  }
+
+  .navigation-user .navigation-item:nth-last-child(1) {
+    padding-right: 0;
+  }
+
+  .navigation-user {
+    list-style: none;
+    display: flex;
+    line-height: 20px;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    min-height: 104px;
+    flex-wrap: wrap;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .search-button:hover {
+    background: rgba(252, 252, 252, 0.5);
+  }
+
+  .search-button:focus-visible {
+    background: rgba(252, 252, 252, 0.5);
+    border: 2px solid #2D3440;
+    padding: 7px;
+    outline: none;
+  }
+
+  .search-button:active {
+    background: #fcfcfc;
+  }
+
+  .search-button {
+    padding: 9px;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background: rgba(252, 252, 252, 0.3);
+    border: none;
+    border-radius: 27px;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .login-button:hover {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    padding: 6px 14px;
+  }
+
+  .login-button:active {
+    background: #fcfcfc;
+    border-radius: 30px;
+  }
+
+  .login-button:focus-visible {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    outline: 2px solid #2d3440;
+  }
+
+  .login-button {
+    padding: 0;
+    min-width: 84px;
+    min-height: 32px;
+    background-repeat: no-repeat;
+    background: rgba(252, 252, 252, 0.3);
+    border: none;
+    border-radius: 27px;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .login-icon {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+
+  .login-text {
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    color: #2d3440;
+    top: 6px;
+    left: 38px;
+  }
+
+  .basket-button:hover {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    padding: 6px 14px;
+  }
+
+  .basket-button:active {
+    background: #fcfcfc;
+    border-radius: 30px;
+  }
+
+  .basket-button:focus-visible {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    outline: 2px solid #2d3440;
+  }
+
+  .basket-button {
+    padding: 0;
+    min-width: 115px;
+    min-height: 32px;
+    background-repeat: no-repeat;
+    background: rgba(252, 252, 252, 0.3);
+    border: none;
+    border-radius: 27px;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .basket-icon {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+
+  .basket-text {
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    color: #2d3440;
+    top: 6px;
+    left: 38px;
+  }
+
+  .logo {
+    padding: 24px 16px 24px 0;
+  }
+
+  .tel {
+    font-weight: 700;
+    text-decoration: none;
+    color: #2d3440;
+  }
+
+  .tel:hover {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+  }
+
+  .tel:active {
+    background: #fcfcfc;
+    border-radius: 30px;
+  }
+
+  .tel:focus-visible {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    outline: 2px solid #2d3440;
+  }
+
+  .gift-header {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+    text-align: center;
+    margin: 80px auto 55px;
+  }
+
+  .gift {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .raspberry,
+  .marshmallow {
+    padding: 36px;
+    width: 498px;
+    min-height: 196px;
+    border-radius: 16px;
+    background-color: #ff7799;
+    position: relative;
+  }
+
+  .raspberry-header,
+  .marshmallow-header {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .raspberry-text ,
+  .marshmallow-text {
+    margin: 28px 0;
+    max-width: 328px;
+  }
+
+  .raspberry-image,
+  .marshmallow-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .wanna-gift-button:hover {
+    background: rgba(252, 252, 252, 0.4);
+    outline: 4px solid #fcfcfc;
+    box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+    border-radius: 26px;
+  }
+
+  .wanna-gift-button:active {
+    background: #fcfcfc;
+    outline: 2px solid #2d3440;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+  }
+
+  .wanna-gift-button:focus-visible {
+    background: rgba(252, 252, 252, 0.5);
+    outline: 2px solid #2d3440;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+  }
+
+  .wanna-gift-button:disabled {
+    background: #e7e7e7;
+    outline: 4px solid rgba(252, 252, 252, 0.4);
+    border-radius: 26px;
+    color: #b9b9b9;
+  }
+
+  .wanna-gift-button {
+    min-width: 176px;
+    min-height: 44px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    border: none;
+    outline: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    background: #fcfcfc;
+    color: #2d3440;
+    cursor: pointer;
+  }
